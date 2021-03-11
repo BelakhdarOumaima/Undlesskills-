@@ -1,0 +1,98 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+html, body{
+	
+	background-image: linear-gradient(to left top, #faf8f5, #f8e9e0, #f9d9d3, #f6c8d1, #eabad7);
+	
+	}
+nav{
+	width:250px;
+	position:fixed;
+	top:0;
+	padding-top:20px;
+	bottom:0;
+	background:rgba(0,0,0,0.1);
+	border-radius:0% 90% 30% 41% / 50% 70% 90% 0%;
+	box-shadow:5px 7px 10px rgba(0,0,0,.5)
+	}
+nav ul{
+	top:30px;
+	position:relative;
+	list-style:none;
+}	
+nav ul li a{
+	display:flex;
+	align-items:center;
+	font-family:ariel;
+	text-decoration:none;
+	color:#000;
+	padding:10px 30px;
+	height:50px;
+	transition:0.3s ease, 0.3s ease-in;
+	
+}
+nav ul li a:hover{
+	
+	color:#fff;
+	transform:scale(1.2);
+}
+nav ul ul {
+	position:absolute;
+	left:200px;
+	width:200px;
+	top:10px;
+    display:none;
+	background:rgba(0,0,0,0.1);
+	border-radius:20px;
+	
+	box-shadow:5px 7px 10px rgba(0,0,0,.5)
+}
+nav ul .crs span{
+	position:absolute;
+	right:110px;
+	font-size:1.5em;
+}
+nav ul .crs{
+	position:relative;
+}
+nav ul .crs:hover > ul{
+	display:initial;
+	background:#eabad7;	
+	
+}
+.eq{
+	position:absolute;
+	left:200px;
+	top:0;
+	
+	
+}
+nav ul .equ:hover .eq{
+	display:initial;
+	background:#eabad7;
+}
+h3{
+	font-size:30px;
+	font-style: oblique;
+   font-weight: lighter;
+}
+.quest p{
+	font-size:50px;
+	font-style: oblique;
+   font-weight: lighter;
+   line-height:50px;
+   top:90px;
+   display:block;
+}
+h1{font-family:Copperplate, Papyrus, fantasy;}
+table{
+	border:groove 2px black;
+	border-collapse:collapse;
+	
+}
+
+td{border:solid 1px black;
+border-collapse:collapse;}
