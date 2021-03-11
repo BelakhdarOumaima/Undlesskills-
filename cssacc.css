@@ -1,0 +1,138 @@
+body{padding:0;
+	margin:0;
+	font-family:Comic Sans MS;
+	overflow:hidden;
+	position:absolute;
+	display:block;
+	}
+	
+	.section-cover .cover__media {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.sidebar{
+    position:fixed;
+	background:#491d53;
+	border-radius:0% 100% 68% 41% / 54% 89% 50% 0%;
+	margin-top:0;
+	padding-top:30px;
+	left:0;
+	width:250px;
+	height:100%;
+	z-index:3;overflow-x: hidden;
+	
+}	
+.sidebar a{
+	z-index:2;
+	margin-left:20px;
+	color:#bfd9ff;
+	display:block;
+	width:100%;
+	line-height:30px;
+	text-decoration:none;
+	padding-left:0px;
+	margin-top:30px;
+	transition:0.5s;
+	transition-property:background color;
+	
+}
+.sidebar nav a:hover{
+	background:#5068a9;
+    color:#ffd7e9;
+	
+}
+video{height:100%;
+      width:100%;
+	  z-index:-100;}
+.video:before{
+	position:absolute;
+	content:"";
+	height:100%;
+	width:100%;
+		background:#bfd9ff2e;
+   		
+	  }
+.closebtn{
+  position: absolute;
+  padding-bottom:10px;
+  font-size: 50px;
+  line-height:90px;
+  cursor:pointer;
+ 
+}
+.opbtn{
+	font-size:30px;cursor:pointer;
+	position:absolute;
+	text-align:left;
+	padding-bottom:10px;
+	padding-top:100px;
+	z-index:3;
+	background-color:#491d53;
+
+	border-radius:0 0 1em 0 / 0 0 1em  0;
+	width:50px;
+    color:#bfd9ff;
+	text-align:center;
+}	  
+
+#id1{
+	
+	width:100%;
+	height:100%;
+	position:absolute;
+	text-align:center;
+	top:0;
+	left:0;
+	padding-top:80px;
+	z-index:2;
+	color:#491d53;
+	
+	
+}
+
+#id1 p{
+	font-size:30px;
+	text-align:center;
+}
+
+.nf-r1 {
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.2em;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2em;
+}
+
+.nf-r1::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 20%;
+  bottom: -0.5em;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  background-color: #000;
+}
+
+.nf-r2 {
+  font-family: Lora, serif;
+  font-size: 8em;
+  line-height: 70px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
