@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TestezVosConnaissance</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="footercss.css">
+<link rel="stylesheet" href="quiz1css.css">
+</head>
+<body>
+<nav>
+  <ul>
+  <li><a href="index.html">Accueil</a></li>
+     <li class="crs"><a href="#">Cours <span>&#10097;</span></a>
+	   <ul>
+	   <li class="equ"><a href="#">Equations<span style="right:50px;">&#10097;</span></a>
+         <ul class="eq">	   
+       <li><a href="page1.html">Equatin 1<sup>er </sup> degre</a></li>		
+          <li><a href="#">Systeme d'equation</a></li>
+          </ul>	   
+	   </li>
+		<li><a href="#">Les ensembles</a></li>	 		  	
+	   <li><a href="#">Polynomes</a></li>
+       </ul>
+	 </li>
+     <li class="crs"><a href="#">Exercices<span>&#10097;</span></a>
+	 <ul>
+	  <li class="equ"><a href="#">Equations<span style="right:50px;">&#10097;</span></a>	
+        <ul class="eq">
+		<li><a href="#">Equatin premier degre</a></li>		
+          <li><a href="#">Systeme de d'equations</a></li>
+		  </ul>
+		  </li>			  
+	    <li><a href="#">Les ensembles</a></li>	 		  	
+	  <li><a href="#">Polynomes</a></li>
+         </ul>
+	 </li>
+	 
+	 <li class="crs"><a href="#">Quiz<span>&#10097;</span></a>
+	 <ul>
+	   <li><a href="#">Quiz1</a></li>
+	    <li><a href="#">Quiz2</a></li>
+	 </ul>
+	 </li>
+	 <li class="crs"><a href="#">eazy for lazy<span>&#10097;</span></a>
+	  <ul>
+	   <li><a href="eazyforlazy.html">resolveur de systemes lineaires</a></li>				  
+	    <li><a href="#">Polynomes</a></li>
+        <li><a href="#">calculateur Arithmetique</a></li>	 		  
+	    <li><a href="#">Calculatrice</a></li>	
+	   </ul></li>
+	
+  </ul>
+</nav>
+<center>
+<header><h1 style="font-family:https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.css; font-size:40px;"> Mathematique</h1></header>
+<hr> 
+
+
+<script language="JavaScript">
+
+var rep = new Array;
+
+var done = new Array;
+
+var score = 0;
+rep[1] = "a";
+
+rep[2] = "d";
+
+rep[3] = "d";
+
+rep[4] = "c";
+
+rep[5] = "b";
+
+rep[6] = "c";
+
+rep[7] = "b";
+
+
+ 
+function equdeg1(qst, rqt) {
+
+        if (rqt != rep[qst]) {
+
+                if (!done[qst]) {
+
+                        done[qst] = -1;
+
+                        alert("Faux !!   La bonne réponse était en - " + rep[qst] + " -");
+
+                        }
+
+                else {
+
+                        alert("Tu as déjà répondu à cette question !");
+
+                        }
+
+                }
+
+        else {
+
+                if (!done[qst]) {
+
+                        done[qst] = -1;
+
+                        score++;
+
+                        alert("Bonne réponse !! ");
+
+                        }
+
+                else { 
+
+                        alert("Tu as déjà répondu à cette question !");
+
+                        }
+
+                }
+
+}
+
+
+function NextLevel () {
+
+        if (score > 10) {
+
+                alert("Exellent Travail !");
+
+                }
+
+        if (score > 8 && score <= 10) {
+
+                alert(score + "/10. " + "Tres bien !");
+
+                }
+
+        if (score > 6 && score <= 8) {
+
+                alert(score + "/10. " + "Bien, mais... pas parfait.");
+
+                }
+ 
+ 
+
+        if (score >= 4 && score < 6) {
+
+                alert(score + "/10. " + "Pas terrible.. un autre essai ?");
+
+                }
+
+        if (score < 4) {
+
+                alert(score + "/10. " + "Il faut refaire le QCM");
+
+                }
+ 
+done = new Array;
+
+score = 0;
+document.quest.reset();
+
+}
+
+</script>
+<h1> Testez vos connaissances</h1>
+<form name="quest">
+<table>
+<tr>
+<td>
+<p><h3>-x − 7 = 1</h3></p></td>
+<td><br><input type="radio" name="1" value="a" onclick="equdeg1(1, this.value)">a.
+-8
+<br><input type="radio" name="1" value="b" onclick="equdeg1(1, this.value)">b.
+6
+<br><input type="radio" name="1" value="c" onclick="equdeg1(1, this.value)">c.
+9
+<br><input type="radio" name="1" value="d" onclick="equdeg1(1, this.value)">d.
+1/7
+</td><br>
+</tr><tr>
+<td><p><h3>2x + 7 = -7	</h3></p></td>
+<td><br><input type="radio" name="2" value="a" onclick="equdeg1(2, this.value)">a.
+7
+<br><input type="radio" name="2" value="b" onclick="equdeg1(2, this.value)">b.
+-16
+<br><input type="radio" name="2" value="c" onclick="equdeg1(2, this.value)">c.
+0
+<br><input type="radio" name="2" value="d" onclick="equdeg1(2, this.value)">d.
+-7</td>
+<br>
+</tr><tr>
+<td><p><h3>-13x − 1 = 3</h3></p></td>
+<td><br><input type="radio" name="3" value="a" onclick="equdeg1(3, this.value)">a.
+13
+<br><input type="radio" name="3" value="b" onclick="equdeg1(3, this.value)">b.
+17
+<br><input type="radio" name="3" value="c" onclick="equdeg1(3, this.value)">c.
+-(2/13)
+<br><input type="radio" name="3" value="d" onclick="equdeg1(3, this.value)">d.
+-(4/13)</td>
+<br>
+</tr><tr>
+<td><p><h3>x − 12 = 3</h3></p></td>
+<td><br><input type="radio" name="4" value="a" onclick="equdeg1(4, this.value)">a.
+-9
+<br><input type="radio" name="4" value="b" onclick="equdeg1(4, this.value)">b.
+-(1/12)
+<br><input type="radio" name="4" value="c" onclick="equdeg1(4, this.value)">c.
+15
+<br><input type="radio" name="4" value="d" onclick="equdeg1(4, this.value)">d.
+14</td>
+<br>
+</tr><tr>
+<td><p><h3>-2x + 7 = -11</h3></p></td>
+<td><br><input type="radio" name="5" value="a" onclick="equdeg1(5, this.value)">a.
+-(2/7)
+<br><input type="radio" name="5" value="b" onclick="equdeg1(5, this.value)">b.
+9
+<br><input type="radio" name="5" value="c" onclick="equdeg1(5, this.value)">c.
+-16
+<br><input type="radio" name="5" value="d" onclick="equdeg1(5, this.value)">d.
+2
+</td><br>
+</tr><tr>
+<td><p><h3>11x − 11 = -4</h3></p></td>
+<td><br><input type="radio" name="6" value="a" onclick="equdeg1(6, this.value)">a.
+-(7/11)
+<br><input type="radio" name="6" value="b" onclick="equdeg1(6, this.value)">b.
+-(15/11)
+<br><input type="radio" name="6" value="c" onclick="equdeg1(6, this.value)">c.
+7/11
+<br><input type="radio" name="6" value="d" onclick="equdeg1(6, this.value)">d.
+1/-4
+</td><br>
+</tr><tr>
+<td><p><h3>9x + 13 = -13</h3></p></td>
+<td><br><input type="radio" name="7" value="a" onclick="equdeg1(7, this.value)">a.
+0
+<br><input type="radio" name="7" value="b" onclick="equdeg1(7, this.value)">b.
+-(26/9)
+<br><input type="radio" name="7" value="c" onclick="equdeg1(7, this.value)">c.
+9/13
+<br><input type="radio" name="7" value="d" onclick="equdeg1(7, this.value)">d.
+-35
+</td>
+</tr><tr>
+</table><br>
+<br>
+<p><input type="button" name="Resultats" value="Résultats" onclick="NextLevel()">
+<br>&nbsp;
+</p></form>
+
+<footer>
+	  
+	  <center><br><br><hr>
+	<div class="cont">
+<span >CONTACTEZ NOUS</span><br>
+	<a href="https://www.facebook.com/FSRUM5" target="_blank" title="Facebook"><img class="fc" src="https://i.pinimg.com/originals/b7/b0/89/b7b089e0f458cbfbda913f1d8cc2243c.png"
+	style="width:130%; height:130%; border-radius:80px" ></a>
+	<a  href="https://www.instagram.com/facultedessciencesderabat/" title="Instagram"><img class="ig" src="https://th.bing.com/th/id/R89305016b2dc8b6c6d77bf328db22c88?rik=Wia52qeZFgWCzg&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f1431%2f5776%2fproducts%2finstagram-round-logo-rubber-stamp_grande.png%3fv%3d1507308608&ehk=1Ak%2brCKGMh0rhtLlU6BjF3CygJTJFg5wHOnX%2b3mqEQQ%3d&risl=&pid=ImgRaw"
+	style="width:70%; height:70%; border-radius:80px"></a>
+	<a href="mailto:oumaima.belakhdar@um5r.ac.ma" title="Mail"><img class="em" src="https://www.shareicon.net/data/512x512/2016/07/08/116981_email_512x512.png"
+	style="width:70%; height:70%; border-radius:80px"></a>
+	<br><br>
+	</div>
+  <p align="center" style="background-color:#fdf6f6;bottom:0;position:fixed;text-align:center;right:0;left:0; font-size:20px; color:#211717; font-family:https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/v4-shims.min.js;" >Copyright © 2021 Belakhdar Oumaima -  Tous droits réservés </p>
+
+</center>
+</footer
+</body>
+</html>
